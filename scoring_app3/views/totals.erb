@@ -1,0 +1,10 @@
+<h2>Player Totals</h2>
+<h3>click player's name to enter scores</h3>
+
+<% @players.each do |player| %>
+  <a href="/score_player/<%= player[:id] %>"><h2><%= player[:name] %></h2></a>
+
+  <h2><%= total_score(player[:id]) %></h2>
+<% end %>
+
+<a href="/"><h2>home page</h2></a>

@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <h2>Enter Player Information</h2>
+    <div>
+    <ul>
+      <li>
+        <form action="/new_player_info" method="post">
+          <label for="player_name">Enter the name of the player:</label>
+          <input name="player_name" placeholder="Name" type="text" value="">
+          <label for="player_age">Enter the age of the player:</label>
+          <input name="player_age" placeholder="Age" type="text" value="">
+          <label for="handicap">Enter player's USGA handicap:</label>
+          <input name="handicap" placeholder="handicap" type="text" value="">
+          <input type="submit" value="Submit">
+        </form>
+      </li>
+    </ul>
+    </div>
+    <a href="/display_players"><h2>list of players</h2></a>
+    <a href="/totals"><h2>player totals</h2></a>
+  
+  </body>
+
+</html>

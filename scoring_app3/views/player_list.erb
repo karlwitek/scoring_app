@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <% @players.each do |player_hash| %>
+        <a href="/score_player/<%= player_hash[:id] %>"<h3><%= player_hash[:name] %></h3></a>
+        <h3>Age: <%= player_hash[:age] %></h3>
+        <h3>Id: <%= player_hash[:id] %></h3>
+        <h3> Hdcp: <%= player_hash[:hdcp] %></h3>
+        <h3>-----------------------------------</h3>
+    <% end %>
+
+  </body>
+  <a href="/add_player">Enter Another Player</a>
+
+</html>

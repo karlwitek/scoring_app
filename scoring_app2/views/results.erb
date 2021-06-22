@@ -1,0 +1,11 @@
+<h2>Results</h2>
+<h3>Gross</h3>
+<% @gross_scores.each do |score_hash| %>
+  <h3><%= score_hash[:name] %> : <%= score_hash[:gross] %>
+<% end %>
+<h3>Net</h3>
+<% @net_scores.each do |score_hash| %>
+  <h3><%= score_hash[:name] %> : <%= score_hash[:net] %>
+<% end %>
+
+<a href="/"><h3>home page</h3></a>

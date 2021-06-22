@@ -1,0 +1,45 @@
+<h2>Score Entry</h2>
+
+<h2>Enter Scores for: <%= @player[:name] %></h2>
+
+<form action="/score_player/<%= @player[:id] %>" method="post">
+  <label for="h1">hole 1 </label>
+  <input name="h1" type="text"/><br>
+  <label for="h2">hole 2</label>
+  <input name="h2" type="text"/><br>
+  <label for="h3">hole 3 </label>
+  <input name="h3" type="text"/><br>
+  <label for="h4">hole 4 </label>
+  <input name="h4" type="text"/><br>
+  <label for="h5">hole 5 </label>
+  <input name="h5" type="text"/><br>
+  <label for="h6">hole 6 </label>
+  <input name="h6" type="text"/><br>
+  <label for="h7">hole 7 </label>
+  <input name="h7" type="text"/><br>
+  <label for="h8">hole 8 </label>
+  <input name="h8" type="text"/><br>
+  <label for="h9">hole 9 </label>
+  <input name="h9" type="text"/><br>
+  <label for="h10">hole 10 </label>
+  <input name="h10" type="text"/><br>
+  <label for="h11">hole 11 </label>
+  <input name="h11" type="text"/><br>
+  <label for="h12">hole 12 </label>
+  <input name="h12" type="text"/><br>
+  <label for="h13">hole 13 </label>
+  <input name="h13" type="text"/><br>
+  <label for="h14">hole 14 </label>
+  <input name="h14" type="text"/><br>
+  <label for="h15">hole 15 </label>
+  <input name="h15" type="text"/><br>
+  <label for="h16">hole 16 </label>
+  <input name="h16" type="text"/><br>
+  <label for="h17">hole 17 </label>
+  <input name="h17" type="text"/><br>
+  <label for="h18">hole 18 </label>
+  <input name="h18" type="text"/><br>
+  <input type="submit" value="save"/>
+</form>
+
+<a href="/totals"><h3>results</h3></a>
