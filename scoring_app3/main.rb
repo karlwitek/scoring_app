@@ -57,8 +57,8 @@ get "/totals" do
 end
 
 get "/results" do
-  @gross_scores = @storage.scores_in_order(@storage.all_players, "gross")
-  @net_scores = @storage.scores_in_order(@storage.all_players, "net")
+  @gross_scores = @storage.scores_in_order("gross")
+  @net_scores = @storage.scores_in_order("net")
   @payballs = @storage.format_payballs
   erb :results
 end

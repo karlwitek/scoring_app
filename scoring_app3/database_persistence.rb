@@ -39,9 +39,9 @@ class DatabasePersistence
     tuple["sum"].to_i
   end
 
-  def scores_in_order(players_array, format)
+  def scores_in_order(format)
     totals_array = []
-    players_array.each do |player|
+    all_players.each do |player|
       hdcp = player[:hdcp].to_i
       gross = total_gross_score_for_player(player[:id])
       net_score = 0

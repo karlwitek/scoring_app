@@ -26,9 +26,9 @@ class SessionPersistence
     @session[:players].find { |player| player[:id] == player_id }
   end
 
-  def scores_in_order(players_array, format)
+  def scores_in_order(format)
     totals_array = []
-    players_array.each do |player|
+    @session[:players].each do |player|
       hdcp = player[:hdcp].to_i
       gross = player[:scores].values.map {|val| val.to_i}.sum
       totals_array << { id: player[:id], name: player[:name], gross: gross, net: gross - hdcp }
